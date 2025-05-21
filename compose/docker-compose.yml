@@ -98,7 +98,7 @@ services:
       - no-new-privileges
 
   db:
-    image: postgres:9.5
+    image: postgres:16
     profiles: [ "database" ]
     environment:
       POSTGRES_DB: ${KONG_PG_DATABASE:-kong}
